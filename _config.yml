@@ -1,3 +1,56 @@
-_config.yml
+# サイト基本情報
+title: "ペンぐぃんのホームページ"
+description: "1年次のペンぐぃんの自己紹介・作品紹介サイト"
+author:
+  name: "ペンぐぃん"
+  # email: "youremail@example.com"  # 必要なら
+
+# 公開URL設定（GitHub Pages用）
+url: "https://penguin0702yu.github.io"
+baseurl: "/penguin0702homepage.github.io"  # サブディレクトリで公開している場合
+
+# 言語・タイムゾーン設定
+lang: ja
+timezone: Asia/Tokyo
+
+# テーマ
+theme: minima  # もしくは好きな Jekyll 対応テーマ
+
+# Markdownや出力フォーマット設定
+markdown: kramdown
+permalink: /:title/   # 各ページの URL 構造
+# 例: about.md → /about/
+
+# ナビゲーションやヘッダーに表示するページ
+header_pages:
+  - index.md
+  - about.md
+  - works.md
+  - contact.md
+
+# SNSリンク（テーマが対応していればナビゲーションなどに表示）
+social_links:
+  x: By_penguin0702  # X（旧 Twitter）
+  instagram: penguin0702y
+  facebook: penguin0702y
+  threads: penguin0702y
+  github: penguin0702yu
+
+# プラグイン（GitHub Pagesで許可されたもののみ）
 plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-sitemap
+
+# Google Analytics を使うなら
+# google_analytics: G-XXXXXXXXXX
+
+# その他オプション例
+paginate: 5
+paginate_path: "/page:num"
+
+# 追加設定（もし必要なら）
+exclude:
+  - README.md
+  - LICENSE
+  - node_modules/
