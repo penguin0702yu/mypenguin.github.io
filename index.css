@@ -1,4 +1,4 @@
-.body{margin:0; height:500px; background-color:aquamarine;}
+@media only screen and (max-width: 600px) {.body{margin:0; height:500px; background-color:aquamarine;}
 ul.navi-top, ul.navi-top a {color:black;  background-color:steelblue;}
 ul.navi-top a:hover {color:blue; background-color:steelblue;}
 ul.navi-top {background-color:steelblue;  position:fixed;  left:0;  top:0;  margin:0;  padding:0;  text-stroke-width:10px;  text-stroke-color:white;  text-stroke:1px #8b0000;
